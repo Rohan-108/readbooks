@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-library-library of tomorrow</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"> -->
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html"><span>Read</span>Books</a>
+            <img id="mobile-cta" class="mobile-menu" src="/images/menu.svg" alt="Open navigation">
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="/images/exit.svg" alt="close navigation">
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+                <ul class="secondary-nav">
+                    <li><a href="about.html">About us</a></li>
+                    <li class="get-started-cta"><a href="login.html">Get started</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+         <section class="hero">
+             <div class="container">
+             <h1>One stop for all e-books</h1>
+             <p>“A reader lives a thousand lives before he dies <br> The man who never reads lives only one.”<br><br>-George martin
+            </p>
+             <a class="hero-btn"href="login.html">Get Started</a>
+             </div>
+         </section>
+        <section class="quotes-section">
+            <div class="container">
+                <ul>
+                    <li>
+                        <img src="/images/person.jpg" alt="Person">
+                        <blockquote>"I am not afraid of storms, for I am learning how to sail my ship."
+                            </blockquote>
+                        <cite>-Louisa Malcott</cite>
+                    </li>
+                    <li>
+                        <img src="/images/person.jpg" alt="Person">
+                        <blockquote>"What's the point of having a voice if you're gonna be silent in those moments you shouldn't be?"</blockquote>
+                        <cite>-The hate you give</cite>
+                    </li>
+                    <li>
+                        <img src="/images/person.jpg" alt="Person">
+                        <blockquote>"There is no greater agony than bearing an untold story inside you."</blockquote>
+                        <cite>-Maya Angelou</cite>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="books">
+            <div class="container">
+                <h2>Books</h2>
+                <p>Gateway to new Worlds </p>
+                <div class="book-list">
+                    <ul>
+                        <li>
+                            <img src="./images/harry-potter.jpg" alt="">
+                            <p>Harry Potter-J.K Rowling </p>
+                        </li>
+                        <li>
+                            <img src="./images/stormlight.jpg" alt="">
+                            <p>The ways of kings - Brandon</p>
+                        </li>
+                        <li>
+                            <img src="./images/1984.jpg" alt="">
+                            <p>1984-george orwell</p>
+                        </li>
+                        <li>
+                            <img src="./images/alchemist.png" alt="">
+                            <p>Alchemist-paulo coelho</p>
+                        </li>
+                        <li>
+                            <img src="./images/81dM5-PSE3L.jpg" alt="">
+                            <p>Mistborn-Brandon</p>
+                        </li>
+                        <li>
+                            <img src="./images/pride.jpg" alt="">
+                            <p>Pride & Prejudice -Jane austin</p>
+                        </li>
+                    </ul>
+                </div>
+                <a href="books.html">Explore More Books</a>
+            </div>
+        </section>
+        <section class="features-section">
+            <div class="container">
+                <p><span>Read</span>Books Features</p>
+                <ul class="features-list">
+                    <li>Unlimited E-books </li>
+                    <li>Progress Remainder</li>
+                    <li>Confetti explosion on Book completion</li>
+                    <li>Social Media Announcements</li>
+                    <li>Easy to use </li>
+                    <li>Other awesome features</li>
+                </ul>
+                <img src="/images/holding-phone.jpg" alt="Man holding-phone">
+            </div>
+        </section>
+            <section class="testimonials">
+                <h2>What Our User Say</h2>
+                <ul>
+                    <li>
+                        <img src="./images/person.jpg" alt="">
+                        <div>
+                            <p>ReadBooks makes finding e-books online very easy and i read many novels due to its easy to use interface.</p>
+                            <h3>- Rohan</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/madara uchiha.jpg" alt="">
+                        <div>
+                            <p>Best for me to learn about someone's story and more i realise there is only pain and suffering in this world.</p>
+                            <h3>- Madara uchiha</h3>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <hr>
+        <footer>
+            <h4>Contact us</h4>
+            <p>Our presence is on every social media  <br>Contact us to suggest any ideas or flaws so we can improve our product.</p>
+            <a href=""><img src="./images/instagram-logo-svgrepo-com.svg" alt=""></a>
+            <a href=""><img src="./images/facebook-logo-svgrepo-com.svg" alt=""></a>
+            <a href=""><img src="./images/whatsapp-logo-variant-svgrepo-com.svg" alt=""></a>
+        </footer>    
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })        
+    </script>
+</body>
+</html>

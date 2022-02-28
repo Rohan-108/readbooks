@@ -1,0 +1,208 @@
+:root {
+  --primary-color: #007af3;
+}
+
+body {
+  background: #f2f2f2;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.navbar {
+  background: whitesmoke;
+  padding: 1em;
+
+  .logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5em;
+
+    span {
+      color: var(--primary-color);
+    }
+  }
+  nav {
+    //display: none;
+    right: -400px;
+  }
+  .container {
+    display: flex;
+    place-content: space-between;
+  }
+  .mobile-menu {
+    cursor: pointer;
+  }
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+section {
+  padding: 2.5em 2em;
+}
+nav.menu-btn {
+  right: 0;
+  transition: all 1s ease-in-out;
+}
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 50%;
+  right: 0;
+  top: 0;
+  background: #20272e;
+  height: 100vh;
+  padding: 1em;
+  ul.primary-nav {
+    margin-top: 5em;
+  }
+
+  li {
+    a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 0.5em;
+      font-size: 1.3em;
+      text-align: left;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+}
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  .mobile-menu,
+  .mobile-menu-exit {
+    display: none;
+  }
+
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+    justify-content: unset;
+  }
+
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    position: unset;
+    height: auto;
+    width: 100%;
+    background: none;
+    padding: 0;
+
+    ul {
+      display: flex;
+    }
+    a {
+      color: black;
+      font-size: 1em;
+      padding: 0.1em 1em;
+    }
+
+    ul.primary-nav {
+      margin: 0;
+    }
+    li.current a {
+      font-weight: bold;
+    }
+
+    li.get-started-cta a {
+      color: var(--primary-color);
+      border: 3px solid var(--primary-color);
+      font-weight: bold;
+      border-radius: 5em;
+      margin-top: 0.02em;
+      &:hover {
+        background: var(--primary-color);
+        color: white;
+      }
+    }
+  }
+}
+//////////grid layout books/////////
+.adventure-genre {
+  background: #fce5e5;
+
+  .container {
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .book-list {
+      ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+      }
+      li {
+        background: whitesmoke;
+        text-align: center;
+        padding: 2em 1em;
+        width: 80%;
+        margin: 0 auto 5em auto;
+        border-radius: 1em;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        img {
+          display: inline;
+          align-content: center;
+          text-align: center;
+          width: 15em;
+          height: 20em;
+        }
+      }
+    }
+    a {
+      color: #444444;
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      text-decoration: none;
+      cursor: pointer;
+      //color: #006bd6;
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+}
+/////footer//////
+footer {
+  //background-color: #faeded;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  text-align: center;
+  h4 {
+    font-size: 1.2em;
+    color: black;
+  }
+  p {
+    display: block;
+  }
+  a {
+    display: inline-block;
+    img {
+      margin: 0.5em 1em;
+      height: 30px;
+    }
+    &:hover {
+      transform: translateY(-3px);
+      transform: scale(1.2);
+    }
+  }
+}
